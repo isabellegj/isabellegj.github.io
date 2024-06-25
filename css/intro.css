@@ -68,9 +68,9 @@
   text-wrap: wrap;
 }
 
-.intro-title {
-  display: grid;
-  gap: 0.5rem;
+.intro-title h1 {
+  margin-bottom: 1rem;
+  margin-top: 3rem;
 }
 
 .intro-text {
@@ -79,17 +79,17 @@
   line-height: 1.25rem;
 }
 
-/* .intro-text {
+.hello-world {
   border-right: 1px solid black;
   color: black;
   font-size: 1rem;
   white-space: nowrap;
   overflow: hidden;
-} */
+}
 
-/* .typing-animation {
+.typing-animation {
   animation: blinkCursor 500ms steps(40) infinite normal both,
-    typing 7s steps(50) 1s normal;
+    typing 4s steps(40) 1s normal both;
 }
 
 @keyframes typing {
@@ -97,7 +97,7 @@
     width: 0;
   }
   to {
-    width: 100%;
+    width: 9em;
   }
 }
 
@@ -108,9 +108,9 @@
   to {
     border-right-color: transparent;
   }
-} */
+}
 
-@media (max-width: 845px) {
+@media (max-width: 955px) {
   .container {
     padding: 3rem 0rem 3rem 0rem;
   }
@@ -119,14 +119,14 @@
   }
 }
 
-@media (max-width: 655px) {
+@media (max-width: 760px) {
   .menu {
     justify-items: center;
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 610px) {
   .menu {
     background: transparent;
   }
@@ -143,7 +143,7 @@
   }
 }
 
-@media (max-width: 455px) {
+@media (max-width: 590px) {
   .menu {
     gap: 1rem;
     justify-content: center;
