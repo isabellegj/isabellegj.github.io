@@ -1,0 +1,196 @@
+.container {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  background-image: url("../img/pexels-didsss-3527786.jpg");
+  background-size: cover;
+}
+
+.fake-screen {
+  border: 0.2rem solid black;
+  border-radius: 0.5rem;
+  max-width: 1200px;
+  display: grid;
+  background: rgba(255, 255, 255, 0.419);
+  margin: 3rem;
+}
+
+.top-bar {
+  background: black;
+  display: flex;
+  gap: 2rem;
+  justify-content: end;
+  padding: 0.25rem;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  height: 3rem;
+  background: #ede6e6;
+  border-bottom: 0.1rem solid #ded7d7;
+}
+
+.header-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border-radius: 0.25rem;
+  background: #9e9c9c;
+  padding: 0.25rem 10rem 0.25rem 0.5rem;
+}
+
+.menu a {
+  color: white;
+}
+
+.menu a:hover {
+  color: rgb(126, 9, 155);
+}
+
+.intro {
+  height: 350px;
+  display: grid;
+  gap: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding: 3rem;
+  text-wrap: wrap;
+}
+
+.intro-title {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.intro-text {
+  font-size: 1rem;
+  max-width: 800px;
+  line-height: 1.25rem;
+}
+
+/* .intro-text {
+  border-right: 1px solid black;
+  color: black;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+} */
+
+/* .typing-animation {
+  animation: blinkCursor 500ms steps(40) infinite normal both,
+    typing 7s steps(50) 1s normal;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.389);
+  }
+  to {
+    border-right-color: transparent;
+  }
+} */
+
+@media (max-width: 845px) {
+  .container {
+    padding: 3rem 0rem 3rem 0rem;
+  }
+  .header-icons {
+    display: none;
+  }
+}
+
+@media (max-width: 655px) {
+  .menu {
+    justify-items: center;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu {
+    background: transparent;
+  }
+
+  .menu img {
+    display: none;
+  }
+
+  .menu a {
+    font-size: smaller;
+    background: #9e9c9c;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+  }
+}
+
+@media (max-width: 455px) {
+  .menu {
+    gap: 1rem;
+    justify-content: center;
+  }
+  .intro-text p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 280px) {
+  .container {
+    background-image: none;
+    padding: 0rem;
+  }
+  .fake-screen {
+    border: none;
+    margin: 0rem;
+  }
+
+  .top-bar {
+    display: none;
+  }
+
+  .header {
+    background: transparent;
+    border: none;
+    justify-content: start;
+  }
+
+  .intro {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .intro-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro-title h2 {
+    font-size: 1rem;
+  }
+
+  .intro-title p {
+    font-size: 0.75rem;
+  }
+
+  .intro-text p b {
+    font-size: 0.75rem;
+  }
+}
