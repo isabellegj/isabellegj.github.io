@@ -13,7 +13,9 @@
 
 .header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .menu {
@@ -78,6 +80,10 @@
 @media (max-width: 768px) {
   .intro {
     padding: 15.62rem 1.25rem;
+  }
+
+  .header {
+    flex-direction: column;
   }
 
   .hello-world {
