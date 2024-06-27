@@ -19,7 +19,8 @@
 
 .about-text {
   margin-top: 2.5rem;
-  line-height: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
 }
 
 .about-images {
@@ -38,8 +39,35 @@
   margin-top: 3.12rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border-radius: 0.25rem;
 }
 
 .download-cv:hover {
   background: darkblue;
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 5rem;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-city {
+    font-size: 1rem;
+  }
+
+  .about-text {
+    font-size: 0.875rem;
+  }
+
+  .download-cv {
+    font-size: 0.875rem;
+  }
 }

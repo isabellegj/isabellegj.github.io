@@ -31,6 +31,7 @@
   padding: 0.62rem 1.25rem;
   color: white;
   display: block;
+  border-radius: 0.25rem;
 }
 
 .menu a:hover {
