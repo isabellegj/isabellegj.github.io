@@ -1,37 +1,43 @@
 .about {
+  max-width: 75rem;
   display: grid;
-  padding: 170px;
+  grid-template-columns: 1fr;
+  padding: 10.6rem;
   background-color: rgb(2, 0, 36);
   color: white;
   justify-items: start;
 }
 
 .about-title {
-  margin-left: -2px;
-  margin-bottom: 8px;
+  margin-left: -0.12rem;
+  margin-bottom: 0.5rem;
 }
 
 .about-subtitle {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .about-text {
-  margin-top: 40px;
-  line-height: 20px;
+  margin-top: 2.5rem;
+  line-height: 1.25rem;
 }
 
 .about-images {
   display: flex;
-  gap: 20px;
-  justify-content: start;
-  margin-top: 25px;
-  margin-left: -2px;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: flex-start;
+  margin-top: 1.56rem;
+  margin-left: -0.12rem;
 }
 
 .download-cv {
   background: black;
-  padding: 10px 20px;
-  margin-top: 50px;
+  color: white;
+  padding: 0.62rem 1.25rem;
+  margin-top: 3.12rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .download-cv:hover {
