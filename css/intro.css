@@ -1,6 +1,5 @@
 .intro-container {
   height: 100vh;
-  /* background-image: url("../img/pexels-eberhardgross-12486830.jpg"); */
   background: rgb(2, 0, 36);
   background: radial-gradient(
     circle,
@@ -33,7 +32,6 @@
 }
 
 .menu a:hover {
-  /* color: rgb(126, 9, 155); */
   background: rgba(0, 0, 0, 0.541) 35%;
 }
 
@@ -42,13 +40,14 @@
   flex-wrap: wrap;
   padding: 300px 40px;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hello-world {
   border-right: 1px solid white;
   color: white;
-  font-size: 1rem;
+  font-size: 1.25rem;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -76,10 +75,39 @@
   }
 }
 
-@media (max-width: 800px) {
-  .header {
-    flex-direction: column;
-    gap: 40px;
-    padding: 20px;
+@media (max-width: 768px) {
+  .intro {
+    padding: 250px 20px;
+  }
+
+  .hello-world {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro {
+    padding: 210px 15px;
+  }
+
+  .menu a {
+    font-size: 0.75rem;
+    line-height: 1;
+    padding: 10px 20px;
+    color: white;
+    display: block;
+  }
+
+  .hello-world {
+    font-size: 0.75rem;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 20em;
+    }
   }
 }
