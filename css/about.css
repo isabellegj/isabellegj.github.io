@@ -1,4 +1,39 @@
 .about {
   display: grid;
-  margin: 100px;
+  padding: 170px;
+  background-color: rgb(2, 0, 36);
+  color: white;
+  justify-items: start;
+}
+
+.about-title {
+  margin-left: -2px;
+  margin-bottom: 8px;
+}
+
+.about-subtitle {
+  margin-bottom: 8px;
+}
+
+.about-text {
+  margin-top: 40px;
+  line-height: 20px;
+}
+
+.about-images {
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  margin-top: 25px;
+  margin-left: -2px;
+}
+
+.download-cv {
+  background: black;
+  padding: 10px 20px;
+  margin-top: 50px;
+}
+
+.download-cv:hover {
+  background: darkblue;
 }

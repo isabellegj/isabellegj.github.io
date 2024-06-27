@@ -9,42 +9,60 @@
       content="Desenvolvedora Front End Localizada em São Paulo"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Isabelle G. Jesuino</title>
+    <title>Isabelle G. Jesuino - Desenvolvedora Front-End</title>
   </head>
 
   <body>
     <div class="intro-container">
-    <header class="header">
-      <nav aria-label="primary">
-        <ul class="menu">
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Experiência</a></li>
-          <li><a href="">Formação</a></li>
-          <li><a href="">Projetos</a></li>
-          <li><a href="">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+      <header class="header">
+        <nav aria-label="primary">
+          <ul class="menu">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#education">Formação</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <div class="intro">
-      <p class="hello-world typing-animation">
-        Olá! Eu sou a Isabelle. Bem-vindo(a) ao meu portfólio.
-      </p>
+      <div class="intro">
+        <p class="hello-world typing-animation">
+          Olá! Eu sou a Isabelle. Bem-vindo(a) ao meu portfólio.
+        </p>
+      </div>
     </div>
-  </div>
 
-    <main class="about">
-      <div>
-      <h1>Isabelle G. Jesuino</h1>
-      <h2>Desenvolvedora Front-End</h2>
+    <main class="about" id="about" aria-label="About">
+      <h1 class="about-title">Isabelle G. Jesuino</h1>
+      <h2 class="about-subtitle">Desenvolvedora Front-End</h2>
       <p>São Paulo/SP</p>
-      <p>
+      <p class="about-text">
         Trabalho com desenvolvimento front-end desde 2022, quando iniciei minha
         carreira através de um estágio na área de programação. Posteriormente me
         tornei desenvolvedora júnior e sigo na jornada da tecnologia desde
         então. Tenho experiência com HTML, CSS, JavaScript, TypeScript e React e
-        sigo estudando constantemente para aprimorar meus conhecimentos.
+        sigo estudando constantemente para aprimorar meus conhecimentos. Você
+        pode baixar meu currículo
+        <a
+          href="./download/CV_Isabelle_Jesuino.pdf"
+          download="CV_Isabelle_Jesuino.pdf"
+          >Aqui</a
+        >
+        ou no botão ali em baixo.
       </p>
+      <div class="about-images">
+        <img src="./svg/html-icon.svg" alt="" />
+        <img src="./svg/css-icon.svg" alt="" />
+        <img src="./svg/js-icon.svg" alt="" />
+        <img src="./svg/react-icon.svg" alt="" />
+      </div>
+      <a
+        class="download-cv"
+        href="./download/CV_Isabelle_Jesuino.pdf"
+        download="CV_Isabelle_Jesuino.pdf"
+        >Baixar Currículo</a
+      >
     </main>
   </body>
 </html>
