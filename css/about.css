@@ -1,9 +1,12 @@
+.about-container {
+  background-color: rgb(2, 0, 36);
+}
+
 .about {
   max-width: 75rem;
   display: grid;
   grid-template-columns: 1fr;
   padding: 10.6rem;
-  background-color: rgb(2, 0, 36);
   color: white;
   justify-items: start;
 }

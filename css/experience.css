@@ -1,10 +1,14 @@
+.experience-container {
+  background: #000000;
+}
+
 .experience {
   max-width: 1200px;
-  padding: 130px 150px;
+  padding: 120px 20px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 150px;
-  background: #000000;
 }
 
 .experience .subtitle {
