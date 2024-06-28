@@ -1,11 +1,11 @@
 .intro-container {
   height: 100vh;
-  background: black;
+  background: rgb(0, 0, 0);
   background: radial-gradient(
     circle,
-    black,
+    rgba(0, 0, 0, 1) 0%,
     rgb(62, 6, 90) 35%,
-    rgba(32, 5, 99, 1) 100%
+    rgba(0, 0, 0, 1) 100%
   );
   background-size: cover;
   background-repeat: no-repeat;

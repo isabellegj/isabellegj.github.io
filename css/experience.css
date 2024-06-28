@@ -1,5 +1,5 @@
 .experience-container {
-  background: #000000;
+  background: rgb(62, 6, 90);
 }
 
 .experience {
@@ -12,9 +12,10 @@
 }
 
 .experience .subtitle {
-  color: rgb(2, 0, 36);
+  color: black;
   line-break: anywhere;
   font-size: 8rem;
+  font-weight: lighter;
 }
 
 .company {
@@ -22,7 +23,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
   padding: 20px;
-  background: rgb(2, 0, 36);
+  background: black;
   margin-bottom: 20px;
   border-radius: 4px;
   position: relative;
@@ -62,8 +63,8 @@
   font-size: 0.875rem;
   line-height: 1.4;
   border-radius: 4px;
-  background: black;
-  color: #a3a3a3;
+  background: rgb(62, 6, 90);
+  color: white;
   padding: 5px 10px;
 }
 
@@ -75,7 +76,7 @@
   }
 
   .experience .subtitle {
-    color: #141414;
+    color: black;
     font-size: 2rem;
     text-align: center;
   }

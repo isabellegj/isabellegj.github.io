@@ -1,5 +1,5 @@
 .about-container {
-  background-color: rgb(2, 0, 36);
+  background-color: black;
 }
 
 .about {
@@ -14,16 +14,26 @@
 .about-title {
   margin-left: -0.12rem;
   margin-bottom: 0.5rem;
+  font-weight: lighter;
 }
 
 .about-subtitle {
   margin-bottom: 0.5rem;
+  font-weight: lighter;
 }
 
 .about-text {
   margin-top: 2.5rem;
   font-size: 0.875rem;
   line-height: 1.4;
+}
+
+.about-text a {
+  color: rgb(82, 6, 121);
+}
+
+.about-text a:hover {
+  color: rgb(123, 12, 178);
 }
 
 .about-images {
@@ -36,7 +46,7 @@
 }
 
 .download-cv {
-  background: black;
+  background: rgb(62, 6, 90);
   color: white;
   padding: 0.62rem 1.25rem;
   margin-top: 3.12rem;
@@ -46,7 +56,7 @@
 }
 
 .download-cv:hover {
-  background: darkblue;
+  background: rgb(123, 12, 178);
 }
 
 @media (max-width: 480px) {
