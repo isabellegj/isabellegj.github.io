@@ -50,20 +50,6 @@
   position: relative;
 }
 
-.college-course::before {
-  content: "";
-  display: block;
-  width: 4px;
-  height: 20px;
-  background: linear-gradient(
-    rgba(2, 0, 36, 1) 0%,
-    rgba(84, 11, 122, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  position: absolute;
-  left: -24px;
-}
-
 .college-institution {
   font-size: 1.125rem;
   color: #a3a3a3;
@@ -110,9 +96,5 @@
   }
   .education-text {
     font-size: 1.25rem;
-  }
-  .education-extra h3::before {
-    position: initial;
-    margin-bottom: 10px;
   }
 }
