@@ -13,7 +13,6 @@
 
 .header {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -21,8 +20,11 @@
 .menu {
   margin-top: 0.62rem;
   display: flex;
-  flex-wrap: wrap;
   gap: 0.62rem;
+}
+
+.menu li {
+  margin: 0;
 }
 
 .menu a {
@@ -80,11 +82,8 @@
 
 @media (max-width: 768px) {
   .intro {
+    max-width: 1200px;
     padding: 15.62rem 1.25rem;
-  }
-
-  .header {
-    flex-direction: column;
   }
 
   .hello-world {
@@ -92,17 +91,24 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 615px) {
   .intro {
-    padding: 13.12rem 1rem;
+    padding: 4rem 1rem;
+  }
+
+  .header {
+    justify-content: flex-start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .menu a {
-    font-size: 0.9rem;
-    line-height: 1;
-    padding: 0.62rem 1.25rem;
-    color: white;
-    display: block;
+    padding: 0.5rem 1rem;
   }
 
   .hello-world {
@@ -120,12 +126,12 @@
 }
 
 @media (max-width: 360px) {
+  .intro {
+    padding: 6rem 1rem;
+  }
+
   .menu a {
     font-size: 0.75rem;
-    line-height: 0.5;
-    padding: 0.62rem 1.25rem;
-    color: white;
-    display: block;
   }
 
   .hello-world {
