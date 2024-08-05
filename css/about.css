@@ -21,6 +21,25 @@
   margin-bottom: 0.5rem;
   font-weight: lighter;
 }
+.contact {
+  margin-top: 1rem;
+}
+
+.contact li {
+  font-weight: lighter;
+  font-size: 1rem;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.contact li a {
+  color: #ffffff;
+}
+
+.contact li a:hover {
+  color: rgb(123, 12, 178);
+}
 
 .about-text {
   margin-top: 2.5rem;
