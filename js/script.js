@@ -1,3 +1,3 @@
-import initSmoothScroll from "./modules/smooth-scroll";
+import initSmoothScroll from "./modules/smooth-scroll.js";
 
 initSmoothScroll();
