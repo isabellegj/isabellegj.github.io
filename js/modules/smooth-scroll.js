@@ -1,6 +1,4 @@
-// Smooth Scroll
-
-function initSmoothScroll() {
+export default function initSmoothScroll() {
   const internalLinks = document.querySelectorAll('.js-menu a[href^="#"]');
 
   function scrollToSection(event) {
@@ -19,5 +17,3 @@ function initSmoothScroll() {
     link.addEventListener("click", scrollToSection);
   });
 }
-
-initSmoothScroll();
