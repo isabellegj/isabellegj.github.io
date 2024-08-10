@@ -17,6 +17,10 @@
   align-items: center;
 }
 
+[data-menu="button"] {
+  display: none;
+}
+
 .menu {
   margin-top: 0.62rem;
   display: flex;
@@ -80,6 +84,68 @@
   }
 }
 
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 700px) {
+  .js [data-menu="button"] {
+    display: flex;
+    background: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: light;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+    z-index: 300;
+  }
+  .js [data-menu="button"]::before {
+    margin-right: 4px;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 12px;
+    background: #fff;
+    box-shadow: 0 4px #fff, 0 -4px #fff;
+    transition: transform 0.3s;
+  }
+  .js [data-menu="button"].active::before {
+    transform: rotate(90deg);
+  }
+  .js .menu {
+    display: none;
+    position: absolute;
+    background: #191919;
+    width: 160px;
+    z-index: 200;
+    top: 0;
+    padding: 60px 10px 20px 10px;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  .js .menu.active {
+    display: block;
+    animation: show-right 0.3s forwards;
+  }
+  .header {
+    justify-content: flex-start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .intro {
     max-width: 1200px;
@@ -93,22 +159,7 @@
 
 @media (max-width: 615px) {
   .intro {
-    padding: 4rem 1rem;
-  }
-
-  .header {
-    justify-content: flex-start;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .menu {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .menu a {
-    padding: 0.5rem 1rem;
+    padding: 18rem 1rem;
   }
 
   .hello-world {
@@ -127,11 +178,7 @@
 
 @media (max-width: 360px) {
   .intro {
-    padding: 6rem 1rem;
-  }
-
-  .menu a {
-    font-size: 0.75rem;
+    padding: 18rem 1rem;
   }
 
   .hello-world {
