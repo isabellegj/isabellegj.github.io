@@ -62,8 +62,8 @@
 }
 
 .typing-animation {
-  animation: blinkCursor 500ms steps(40) infinite normal both,
-    typing 4s steps(40) 1s normal both;
+  animation: blinkCursor 500ms steps(20) infinite normal both,
+    typing 4s steps(30) 1s normal both;
 }
 
 @keyframes typing {
@@ -71,7 +71,7 @@
     width: 0;
   }
   to {
-    width: 33em;
+    width: 18em;
   }
 }
 
