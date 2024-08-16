@@ -5,6 +5,8 @@ export default function initMenuMobile() {
   const menuList = document.querySelector(".menu");
   const eventos = ["click", "touchend"];
 
+  // teste
+
   if (menuButton) {
     function openMenu(event) {
       menuList.classList.add("active");
